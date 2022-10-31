@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - AMD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'><link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo de amd" width="120"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empresa.html">La Empresa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="productos.html">Procesadores</a></li>
+              <li><a class="dropdown-item" href="productos.html#graficas">Placas de Video</a></li>
+              <li><a class="dropdown-item" href="productos.html#portatiles">Portátiles</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="soporte.html">Soporte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="espacio bg-dark"></div>
+    <header class="bg-light text-white p-2 p-md-4 p-lg-5">
+        <div class="container">
+            <h1 class=" text-md-center">Contacto</h1>
+         
+        </div>
+
+    </header>
+    
+    <section class="container text-white py-3 my-2 my-md-3">
+      <h2 class="pb-3">Envíanos un mensaje</h2>
+      <form id="formulario" class="p-2 row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control bg-light text-light" id="validationCustom01" placeholder="Tu nombre" required>
+          <div class="valid-feedback">
+            Lindo nombre!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Email</label>
+          <input type="email" class="form-control bg-light text-light" id="validationCustom02" placeholder="tumail@mail.com" required>
+          <div class="valid-feedback">
+            Perfecto!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control bg-light text-light" id="validationCustom03" placeholder="+99 99999999" required>
+          <div class="invalid-feedback">
+            Por favor completa este campo.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text bg-light text-light" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control bg-light text-light" id="validationCustomUsername" placeholder="usuario" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor elige tu nombre de usuario.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Contraseña</label>
+          <input type="password" class="form-control bg-light text-light" id="validationCustom04" placeholder="******" required>
+          <div class="invalid-feedback">
+            Por favor completa este campo.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">Región</label>
+          <select class="form-select bg-light text-light" id="validationCustom05" required>
+            <option selected disabled value="">Elegir...</option>
+            <option>América del Norte</option>
+            <option>América del Sur</option>
+            <option>Europa</option>
+            <option>Asia</option>
+            <option>África</option>
+            <option>Oceanía</option>
+          </select>
+          <div class="invalid-feedback">
+            Selecciona tu región.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Tu mensaje</label>
+          <textarea class="form-control bg-light text-light" id="validationTextarea" rows="6" placeholder="Escribe tu mensaje aquí" required></textarea>
+          <div class="invalid-feedback">
+            Debes enviar un mensaje.
+          </div>
+        </div>
+        <div class="col-12">
+            <input type="checkbox" class="btn-check" id="btn-check-outlined">
+            <label class="btn btn-outline-secondary" for="btn-check-outlined">Acepto los términos y condiciones </label>
+            <div class="invalid-feedback">
+              Debes aceptar los términos y condiciones.
+            </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-danger" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="bg-dark text-light p-3 text-center">
+      <div class="redes ">
+        <h4>Redes Sociales</h4>
+        <a href="https://www.youtube.com/c/AMD" target="_blank">
+          <i class='bx bxl-youtube bx-lg' style='color:#ffffffc0'  ></i>
+        </a>
+        <a href="https://www.facebook.com/AMD" target="_blank">
+          <i class='bx bxl-facebook bx-lg' style='color:#ffffffc0' ></i>
+        </a>
+        <a href="https://twitter.com/AMD" target="_blank">
+          <i class='bx bxl-twitter bx-lg' style='color:#ffffffc0'  ></i>
+        </a>
+        <a href="https://www.instagram.com/amd/" target="_blank">
+          <i class='bx bxl-instagram-alt bx-lg' style='color:#ffffffc0'  ></i>
+        </a>
+        <a href="https://discord.me/amd" target="_blank">
+          <i class='bx bxl-discord-alt bx-lg' style='color:#ffffffc0'  ></i>
+        </a>
+      </div>
+      <div class="legal">
+        ©2022 Advanced Micro Devices, Inc
+        <ul>
+          <li><a href="404.html">Términos y condiciones</a></li>
+          <li><a href="404.html">Política de privacidad</a></li>
+          <li><a href="404.html">Política de cookies</a></li>
+          <li><a href="404.html">Marcas registradas</a></li>
+          <li><a href="404.html">Configuración de cookies</a></li>
+        </ul>
+        Todos los derechos reservados
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
